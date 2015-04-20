@@ -1,0 +1,1 @@
+This is folder to hole joomla mysql dump file.

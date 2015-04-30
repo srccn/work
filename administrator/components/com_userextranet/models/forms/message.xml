@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+	
+<form>
+	<fieldset name="details">
+		<field
+			id="id"
+			name="id"
+			type="hidden" />
+			
+		<field
+			name="view_message"
+			type="messageread" />
+		
+		<field
+			name="location"
+			type="hidden"
+			default="1" />
+			
+		<field
+			name="new_recipient"
+			type="user"
+			label="COM_USEREXTRANET_FIELD_MESSAGE_RECIPIENT_LABEL"
+			description="COM_USEREXTRANET_FIELD_MESSAGE_RECIPIENT_DESC"
+			required="true" />
+		
+		<field
+			name="new_recipients"
+			type="messagenewrecipients" />
+		
+		<field
+			name="subject"
+			type="text"
+			label="COM_USEREXTRANET_FIELD_MESSAGE_SUBJECT_LABEL"
+			description="COM_USEREXTRANET_FIELD_MESSAGE_SUBJECT_DESC"
+			required="true" />
+
+		<field
+			name="body"
+			type="textarea"
+			rows="10"
+			cols="100"
+			label="COM_USEREXTRANET_FIELD_MESSAGE_BODY_LABEL"
+			description="COM_USEREXTRANET_FIELD_MESSAGE_BODY_DESC"
+			required="true" />
+		
+		<field
+			name="created_by"
+			type="user"
+			label="COM_USEREXTRANET_FIELD_CREATED_BY_LABEL"
+			description="COM_USEREXTRANET_FIELD_CREATED_BY_DESC" />
+
+		<field name="created_by_alias"
+			type="text"
+			label="COM_USEREXTRANET_FIELD_CREATED_BY_ALIAS_LABEL"
+			description="COM_USEREXTRANET_FIELD_CREATED_BY_ALIAS_DESC"
+			class="inputbox"
+			size="20" />
+		
+		<field
+			name="created_date"
+			type="calendar"
+			id="created_date"
+			class="inputbox"
+			label="COM_USEREXTRANET_FIELD_CREATED_DATE_LABEL"
+			description="COM_USEREXTRANET_FIELD_CREATED_DATE_DESC"
+			format="%Y-%m-%d %H:%M:%S"
+			filter="user_utc"
+			size="22" />
+			
+		<field
+			name="modified_by"
+			type="user"
+			label="COM_USEREXTRANET_FIELD_MODIFIED_BY_LABEL"
+			class="readonly"
+			readonly="true"
+			filter="unset"  />
+		
+		<field
+			name="modified_date"
+			type="calendar"
+			id="modified_date"
+			class="inputbox"
+			label="COM_USEREXTRANET_FIELD_MODIFIED_DATE_LABEL"
+			description="COM_USEREXTRANET_FIELD_MODIFIED_DATE_DESC"
+			format="%Y-%m-%d %H:%M:%S"
+			filter="user_utc" />
+			
+		<field
+			name="checked_out"
+			type="hidden"
+			filter="unset" />
+
+		<field
+			name="checked_out_time"
+			type="hidden"
+			filter="unset" />	
+	</fieldset>
+	
+	<fieldset name="options">
+		<field
+			name="new_opt_private"
+			type="messagenewoptprivate" />
+			
+		<field
+			name="new_opt_notify"
+			type="messagenewoptnotify" />
+			
+		<field
+			name="new_opt_attach"
+			type="messagenewoptattach" />
+			
+		<field
+			name="new_opt_html"
+			type="messagenewopthtml" />
+	</fieldset>
+</form>

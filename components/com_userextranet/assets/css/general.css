@@ -1,0 +1,165 @@
+/*
+ * @package Joomla 3
+ * @copyright Copyright (C) 2005 Open Source Matters. All rights reserved.
+ * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL, see LICENSE.php
+ *
+ * @component UserExtranet 1.3
+ * @copyright Copyright (C) 2014 Popa S. Alexandru www.beesto.com
+ * @license : GNU General Public License version 2 or later; see LICENSE.txt
+*/
+
+/* UserExtranet Front-End CSS */
+/* GENERAL */
+
+/* MAIN DIV { */
+div#userextranet {
+	/* width: 100%; */
+	padding: 0;
+	margin: 10px;
+	/* border: 1px solid #373737; *//* C24050 */
+	min-height: 300px;
+	background: #FFFFFF;
+	line-height: 1.8em;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+#userextranet div,
+#userextranet img,
+#userextranet table,
+#userextranet tr,
+#userextranet td {
+	border: none;
+	float: none;
+	background: none;
+	margin: 0;
+	padding: 0;
+}
+#userextranet div,
+#userextranet input,
+#userextranet select,
+#userextranet button,
+#userextranet fieldset,
+#userextranet legend {
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+/* } */
+
+/* FORM { */
+/* form validation */
+#userextranet .invalid {
+	border-color:red !important;
+}
+/* } */
+
+/* BUTTON BLUE { */
+#userextranet button.ue-button-blue {
+	border: none;
+	font-family: tahoma,arial,sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FFFFFF;
+	background: #1D6BAE;
+	cursor: pointer;
+	padding:4px 7px;
+}
+#userextranet button.ue-button-blue:focus {
+	background-color: #15497C;
+	border: none;
+}
+#userextranet button.ue-button-blue:hover {
+	background-color: #15497C;
+	border: none;
+}
+/* } */
+
+/* BUTTON GREEN { */
+#userextranet button.ue-button-green {
+	border: none;
+	font-family: tahoma,arial,sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FFFFFF;
+	background: #74B71B;
+	cursor: pointer;
+	padding:3px 7px;
+	margin-bottom: 7px;
+}
+#userextranet button.ue-button-green:focus {
+	background-color: #5AA426;
+	border: none;
+}
+#userextranet button.ue-button-green:hover {
+	background-color: #5AA426;
+	border: none;
+}
+/* } */
+
+/* SEARCH { */
+/* search box */
+#userextranet input.ue-search-box {
+	border: 1px solid #3088E9;
+	width: 150px;
+	height: 14px;
+	color: #333333;
+	font-style: italic;
+}
+/* search div center */
+#userextranet div.ue-search-center {
+	border: none;
+	width: 100%;
+	text-align: center;
+}
+/* search div right */
+#userextranet div.ue-search-right {
+	border: none;
+	width: 100%;
+	text-align: right;
+}
+/* search form */
+#userextranet div.ue-search-right form.ue-search-form {
+	margin: 0;
+	padding: 0;
+}
+/* } */
+
+/* TOP MENU { */
+/* main div */
+#userextranet div.ue-top-menu {
+	border: none;
+	/* width: 100%; */
+	text-align: left;
+	margin: 0 0 20px 0;
+	padding: 5px;
+	background: #1D6BAE;/*C24050 #F0F0F0 */
+	font-size: 12px;
+	font-family: helvetica,arial,sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFFFFF;/* #FF8000 */
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+/* arrow span */
+#userextranet div.ue-top-menu span.ue-top-menu-arrow {
+	color: #FFFFFF;/* #666666 */
+	font-weight: normal;
+	font-size: 11px;
+	font-family: verdana,geneva,arial,helvetica,sans-serif;
+	line-height: 1.33em;
+}
+/* menu link */
+#userextranet div.ue-top-menu a:link,
+#userextranet div.ue-top-menu a:visited,
+#userextranet div.ue-top-menu a:active {
+	color: #FFFFFF;/* #D44700 */
+	font-size: 12px;
+	font-family: helvetica,arial,sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	background: #1D6BAE;/* #F0F0F0 */
+}
+#userextranet div.ue-top-menu a:hover {
+	text-decoration: underline;
+}
+/* } */

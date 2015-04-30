@@ -1,0 +1,292 @@
+/*
+ * @package Joomla 3
+ * @copyright Copyright (C) 2005 Open Source Matters. All rights reserved.
+ * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL, see LICENSE.php
+ *
+ * @component UserExtranet 1.3
+ * @copyright Copyright (C) 2014 Popa S. Alexandru www.beesto.com
+ * @license : GNU General Public License version 2 or later; see LICENSE.txt
+*/
+
+/* toolbar */
+div.icon-48-cpanel { background: url('../images/menu/icon-48-ue-cpanel.png') no-repeat left; }
+div.icon-48-alerts { background: url('../images/menu/icon-48-ue-alerts.png') no-repeat left; }
+div.icon-48-folders { background: url('../images/menu/icon-48-ue-folders.png') no-repeat left; }
+div.icon-48-managepermissions { background: url('../images/menu/icon-48-ue-managepermissions.png') no-repeat left; }
+div.icon-48-usergroups { background: url('../images/menu/icon-48-ue-usergroups.png') no-repeat left; }
+div.icon-48-ugmembers { background: url('../images/menu/icon-48-ue-ugmembers.png') no-repeat left; }
+div.icon-48-addusertogroup { background: url('../images/menu/icon-48-ue-addusertogroup.png') no-repeat left; }
+div.icon-48-staff { background: url('../images/menu/icon-48-ue-staff.png') no-repeat left; }
+div.icon-48-downloads { background: url('../images/menu/icon-48-ue-downloads.png') no-repeat left; }
+div.icon-48-messages { background: url('../images/menu/icon-48-ue-messages.png') no-repeat left; }
+div.icon-48-writemess { background: url('../images/menu/icon-48-ue-writemess.png') no-repeat left; }
+div.icon-48-massmess { background: url('../images/menu/icon-48-ue-massmess.png') no-repeat left; }
+div.icon-48-about { background: url('../images/menu/icon-48-ue-about.png') no-repeat left; }
+.icon-32-helpnoteshow { background: url('../images/menu/icon-32-ue-helpnoteshow.png'); }
+.icon-32-helpnotehide { background: url('../images/menu/icon-32-ue-helpnotehide.png'); }
+.icon-32-writemess { background: url('../images/menu/icon-32-ue-writemess.png'); }
+.icon-32-massmess { background: url('../images/menu/icon-32-ue-massmess.png'); }
+.icon-32-send { background: url('../images/menu/icon-32-ue-send.png'); }
+.icon-32-addusertogroup { background: url('../images/menu/icon-32-ue-addusertogroup.png'); }
+.icon-32-ugmembers { background: url('../images/menu/icon-32-ue-ugmembers.png'); }
+.icon-32-addmfiles { background: url('../images/menu/icon-32-ue-addmfiles.png'); }
+.icon-32-addfile { background: url('../images/menu/icon-32-ue-addfile.png'); }
+.icon-32-addfolder { background: url('../images/menu/icon-32-ue-addfolder.png'); }
+.icon-32-cpanel { background: url('../images/menu/icon-32-ue-cpanel.png'); }
+
+/* toolbar */
+.icon-massmess:before { content: url('../images/toolbar/icon-12-ue-toolbar-massmess.png'); }
+.icon-writemess:before { content: url('../images/toolbar/icon-12-ue-toolbar-writemess.png'); }
+.icon-ugmembers:before { content: url('../images/toolbar/icon-12-ue-toolbar-ugmembers.png'); }
+.icon-back:before { content: url('../images/toolbar/icon-12-ue-toolbar-back.png'); }
+.icon-addusertogroup:before { content: url('../images/toolbar/icon-12-ue-toolbar-addusertogroup.png'); }
+.icon-addfile:before { content: url('../images/toolbar/icon-12-ue-toolbar-addfile.png'); }
+.icon-addfolder:before { content: url('../images/toolbar/icon-12-ue-toolbar-addfolder.png'); }
+.icon-addmfiles:before { content: url('../images/toolbar/icon-12-ue-toolbar-addmfiles.png'); }
+.icon-uepurge:before { content: url('../images/toolbar/icon-12-ue-toolbar-uepurge.png'); }
+.icon-helpnotehide:before { content: url('../images/toolbar/icon-12-ue-toolbar-helpnotehide.png'); }
+.icon-helpnoteshow:before { content: url('../images/toolbar/icon-12-ue-toolbar-helpnoteshow.png'); }
+
+/* control panel */
+div.cpanel-icons {
+	width: 50%;
+	float: left;
+	/* border: 1px solid red; */
+}
+div.cpanel div.icon {
+	text-align: center;
+	margin-right: 5px;
+	float: left;
+	margin-bottom: 5px;
+}
+div.ueinfo {
+	border: 1px solid #ccc;
+	background: #f4f4f4;
+	margin: 0 15px;
+	padding: 15px;
+	float: left;
+	width: 40%;
+}
+div.cpanel div.icon a {
+	display: block;
+	float: left;
+	height: auto;
+	min-height: 97px;
+	width: 108px;
+	color: #2c2c2c;
+	vertical-align: middle;
+	text-decoration: none;
+	font-weight: normal;
+}
+div.cpanel img {
+	padding: 10px;
+	margin: 0 auto;
+}
+div.cpanel span {
+	display: block;
+	text-align: center;
+	padding: 0 0 5px;
+}
+div.quickicon-wrapper {
+	margin: 5px 0 5px 0;
+}
+.quickicon-wrapper .icon {
+	padding: 5px 0 5px 10px;
+	margin: 0;
+}
+div.cpanel div.icon a {
+	color: #054993;
+	border-left: 1px solid #CCCCCC;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	background-color: #ffffff;
+	background-image: -moz-linear-gradient(top,#ffffff,#ffffff);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ffffff));
+	background-image: -webkit-linear-gradient(top,#ffffff,#ffffff);
+	background-image: -o-linear-gradient(top,#ffffff,#ffffff);
+	background-image: linear-gradient(to bottom,#ffffff,#ffffff);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=0);
+}
+div.cpanel div.icon a:hover,
+div.cpanel div.icon a:focus {
+	border-left: 1px solid #CCCCCC;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	color: #054993;
+	background: #F4F4F4;
+}
+
+/* button blue */
+.ue-button-blue {
+	border: none;
+	font-family: tahoma,arial,sans-serif;
+	font-size: 11px;
+	font-weight: normal;/* normal bold */
+	color: #FFFFFF;
+	background: #1D6BAE;/* 3B5998 */
+	cursor: pointer;
+	margin: 0;
+	padding:4px 7px;/* 4px 7px */
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.ue-button-blue:focus {
+	background-color: #15497C;/* 3B5998 */
+	border: none;
+}
+.ue-button-blue:hover {
+	background-color: #15497C;/* 6D84B4 */
+	border: none;
+}
+
+/* button red */
+.ue-button-red {
+	border: none;
+	font-family: tahoma,arial,sans-serif;
+	font-size: 11px;
+	font-weight: bold;/* normal bold */
+	color: #FFFFFF;
+	background: #C24050;/* 3B5998 */
+	cursor: pointer;
+	margin: 5px 0;
+	padding:1px 5px;/* 4px 7px */
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.ue-button-red:focus {
+	background-color: #8D2E39;/* 3B5998 */
+	border: none;
+}
+.ue-button-red:hover {
+	background-color: #8D2E39;/* 6D84B4 */
+	border: none;
+}
+
+pre.uecode {
+    border: 1px solid #C4C6A2;
+    background-color: #FEFFEC;
+    padding: 8px;
+    overflow: auto;
+}
+
+/* help note */
+div.ue-helpnote {
+	line-height: 17px;
+	margin: 0 0 10px 0;
+	padding: 10px;
+	border: 1px solid #31A1FF;
+	background-color: #EFF5FA;
+	font-size: 12px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+span.ue-helpnote-note {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #D03812;
+}
+
+div.ue-helpnote a.ue-helpnote-dont {
+	float: right;
+	/*text-decoration: none;*/
+	color: #FF0000;
+	font-size: 11px;
+	/*font-weight: bold;*/
+}
+
+/* table adminlist */
+table.adminlist td {
+	vertical-align: top;
+}
+
+/* recipients */
+input[type=checkbox] {
+   border: none;
+}
+
+span.ue-messages-recipients {
+	float: right;
+	font-size: 11px;
+	color: #888888;
+}
+
+div.ue-message-recipients-div {
+	padding: 2px;
+}
+
+div.ue-message-recipients-div:hover {
+	background-color: #C2E7FC;
+}
+
+div.ue-ftp-location {
+	padding: 10px;
+	background-color: #FFFFFF;
+	border: 1px solid silver;
+	font-size: 13px;
+}
+
+div.ue-ftp-location input {
+	width: 100%;
+	font-size: 13px;
+}
+
+/* alerts div on cpanel page */
+div.ue-alerts {
+	margin: 15px 10px;
+	max-height: 120px;
+	overflow: auto;
+	padding: 10px;
+	background: #FFFFFF;
+	border: 1px solid silver;
+	line-height: 20px;
+}
+
+div.ue-alerts table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+div.ue-alerts table tbody tr td {
+	font-size: 14px;
+}
+
+div.ue-alerts table tbody tr td.atitle {
+	width: 60%;
+	font-weight: bold;
+}
+
+div.ue-alerts table tbody tr td.aread {
+	width: 30%;
+	text-align: center;
+}
+
+div.ue-alerts table thead tr th {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	color: #CC0000;
+	background: #F0F0F0;
+}
+
+/* view alert div */
+div.ue-alert-view {
+	background: #FFFFFF;
+	font-size: 13px;
+}
+
+div.ue-alert-view span {
+	font-weight: bold;
+}
+
+div.ue-alert-view textarea {
+	width: 600px;
+	height: 400px;
+	padding: 5px;
+	margin: 10px 0;
+	font-size: 13px;
+}

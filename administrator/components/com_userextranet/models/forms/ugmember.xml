@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+	
+<form>
+	<fieldset name="details">
+		<field
+			id="id"
+			name="id"
+			type="hidden" />
+		
+		<field
+			name="user_id"
+			type="user"
+			label="COM_USEREXTRANET_FIELD_UGMEMBER_USER_LABEL"
+			description="COM_USEREXTRANET_FIELD_UGMEMBER_USER_DESC"
+			required="true" />
+			
+		<field
+			name="group_id"
+			type="ugmembergroup" />
+	</fieldset>
+</form>

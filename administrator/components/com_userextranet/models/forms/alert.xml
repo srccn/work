@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+	
+<form>
+	<fieldset name="details">
+		<field
+			id="id"
+			name="id"
+			type="hidden" />
+		
+		<field
+			name="atitle"
+			type="text"
+			label="COM_USEREXTRANET_FIELD_ALERT_TITLE_LABEL"
+			description="COM_USEREXTRANET_FIELD_ALERT_TITLE_DESC"
+			required="true" />
+
+		<field
+			name="atext"
+			type="textarea"
+			rows="10"
+			cols="80"
+			label="COM_USEREXTRANET_FIELD_ALERT_TEXT_LABEL"
+			description="COM_USEREXTRANET_FIELD_ALERT_TEXT_DESC" />
+		
+		<!--
+		<field
+			name="atext"
+			type="editor"
+			class="inputbox"
+			label="COM_USEREXTRANET_FIELD_ALERT_TEXT_LABEL"
+			description="COM_USEREXTRANET_FIELD_ALERT_TEXT_DESC"
+			filter="UserExtranetHelper::filterText"
+			buttons="true" />
+		-->
+			
+		<field
+			name="specialtag"
+			type="alerttexttags" />
+			
+		<field
+			name="published"
+			type="list"
+			label="COM_USEREXTRANET_FIELD_ALERT_STATE_LABEL"
+			description="COM_USEREXTRANET_FIELD_ALERT_STATE_DESC" >
+			<option value="1">COM_USEREXTRANET_ENABLED</option>
+			<option value="0">COM_USEREXTRANET_DISABLED</option>
+		</field>
+		
+		<field
+			name="apriority"
+			type="list"
+			label="COM_USEREXTRANET_FIELD_ALERT_PRIORITY_LABEL"
+			description="COM_USEREXTRANET_FIELD_ALERT_PRIORITY_DESC" >
+			<option value="0">COM_USEREXTRANET_LOW</option>
+			<option value="1">COM_USEREXTRANET_MEDIUM</option>
+			<option value="2">COM_USEREXTRANET_HIGH</option>
+		</field>
+		
+		<field
+			name="atask"
+			type="list"
+			label="COM_USEREXTRANET_FIELD_ALERT_EVENT_LABEL"
+			description="COM_USEREXTRANET_FIELD_ALERT_EVENT_DESC" >
+			<option value="0">COM_USEREXTRANET_FILE_NEW</option>
+			<option value="1">COM_USEREXTRANET_SUBFOLDER_NEW</option>
+		</field>
+		
+		<field
+			name="ataskloc"
+			type="list"
+			label="COM_USEREXTRANET_FIELD_ALERT_EVENTLOC_LABEL"
+			description="COM_USEREXTRANET_FIELD_ALERT_EVENTLOC_DESC" >
+			<option value="0">COM_USEREXTRANET_BACKEND</option>
+			<option value="1">COM_USEREXTRANET_FRONTEND</option>
+			<option value="2">COM_USEREXTRANET_BACKEND_FRONTEND</option>
+		</field>
+		
+		<field
+			name="asendby"
+			type="list"
+			label="COM_USEREXTRANET_FIELD_ALERT_SENDBY_LABEL"
+			description="COM_USEREXTRANET_FIELD_ALERT_SENDBY_DESC" >
+			<option value="0">COM_USEREXTRANET_EMAIL</option>
+			<option value="1">COM_USEREXTRANET_MESSAGE</option>
+			<option value="2">COM_USEREXTRANET_EMAIL_AND_MESSAGE</option>
+		</field>
+		
+		<field
+			name="recipients"
+			type="alertrecipients" />
+			
+		<field
+			name="checked_out"
+			type="hidden"
+			filter="unset" />
+
+		<field
+			name="checked_out_time"
+			type="hidden"
+			filter="unset" />	
+	</fieldset>
+	
+	<fieldset name="publish">
+		<field
+			name="created_by"
+			type="user"
+			label="COM_USEREXTRANET_FIELD_CREATED_BY_LABEL"
+			description="COM_USEREXTRANET_FIELD_CREATED_BY_DESC" />
+
+		<field name="created_by_alias"
+			type="text"
+			label="COM_USEREXTRANET_FIELD_CREATED_BY_ALIAS_LABEL"
+			description="COM_USEREXTRANET_FIELD_CREATED_BY_ALIAS_DESC"
+			class="inputbox"
+			size="20" />
+		
+		<field
+			name="created_date"
+			type="calendar"
+			id="created_date"
+			class="inputbox"
+			label="COM_USEREXTRANET_FIELD_CREATED_DATE_LABEL"
+			description="COM_USEREXTRANET_FIELD_CREATED_DATE_DESC"
+			format="%Y-%m-%d %H:%M:%S"
+			filter="user_utc"
+			size="22" />
+			
+		<field
+			name="modified_by"
+			type="user"
+			label="COM_USEREXTRANET_FIELD_MODIFIED_BY_LABEL"
+			class="readonly"
+			readonly="true"
+			filter="unset"  />
+		
+		<field
+			name="modified_date"
+			type="calendar"
+			id="modified_date"
+			class="inputbox"
+			label="COM_USEREXTRANET_FIELD_MODIFIED_DATE_LABEL"
+			description="COM_USEREXTRANET_FIELD_MODIFIED_DATE_DESC"
+			format="%Y-%m-%d %H:%M:%S"
+			filter="user_utc" />
+	</fieldset>
+</form>

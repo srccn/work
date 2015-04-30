@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<config>
+		<fieldset name="general" label="COM_USEREXTRANET_GENERAL" description="" >
+			<field
+				name="noreply_email"
+				default=""
+				size="20"
+				type="text"
+				label="COM_USEREXTRANET_CONFIG_NOREPLY_LABEL"
+				description="COM_USEREXTRANET_CONFIG_NOREPLY_DESC"/>
+				
+			<field
+				name="staff_status"
+				type="list"
+				default="1"
+				label="COM_USEREXTRANET_CONFIG_STAFFSTATUS_LABEL"
+				description="COM_USEREXTRANET_CONFIG_STAFFSTATUS_DESC" >
+				<option value="1">COM_USEREXTRANET_ENABLED</option>
+				<option value="2">COM_USEREXTRANET_DISABLED</option>
+			</field>
+		</fieldset>
+			
+		<fieldset name="folderpermissions" label="COM_USEREXTRANET_FOLDER_PERMISSIONS" description="" >
+			<field
+				name="when_copy"
+				type="list"
+				default="2"
+				label="COM_USEREXTRANET_CONFIG_WHENCOPY_LABEL"
+				description="COM_USEREXTRANET_CONFIG_WHENCOPY_DESC" >
+				<option value="1">COM_USEREXTRANET_RESET_F_PERMISSIONS</option>
+				<option value="2">COM_USEREXTRANET_KEEP_F_PERMISSIONS</option>
+				<option value="3">COM_USEREXTRANET_SET_F_PERMISSIONS_FROM_PARENT</option>
+			</field>
+			
+			<field
+				name="when_move"
+				type="list"
+				default="2"
+				label="COM_USEREXTRANET_CONFIG_WHENMOVE_LABEL"
+				description="COM_USEREXTRANET_CONFIG_WHENMOVE_DESC" >
+				<option value="1">COM_USEREXTRANET_RESET_F_PERMISSIONS</option>
+				<option value="2">COM_USEREXTRANET_KEEP_F_PERMISSIONS</option>
+				<option value="3">COM_USEREXTRANET_SET_F_PERMISSIONS_FROM_PARENT</option>
+			</field>
+			
+			<field
+				name="when_create"
+				type="list"
+				default="2"
+				label="COM_USEREXTRANET_CONFIG_WHENCREATE_LABEL"
+				description="COM_USEREXTRANET_CONFIG_WHENCREATE_DESC" >
+				<option value="1">COM_USEREXTRANET_NO_PERMISSIONS_SET</option>
+				<option value="2">COM_USEREXTRANET_INHERIT_FROM_PARENT</option>
+			</field>
+		</fieldset>
+		
+		<fieldset name="files" label="COM_USEREXTRANET_FILES" description="" >
+			<field
+				name="filesize"
+				default="2"
+				size="10"
+				type="text"
+				label="COM_USEREXTRANET_CONFIG_FILESIZE_LABEL"
+				description="COM_USEREXTRANET_CONFIG_FILESIZE_DESC"/>
+			<field
+				name="filetype"
+				default="gif,jpg,png,zip,rar,csv,doc,docx,txt,pdf,mp3,mp4,avi"
+				size="60"
+				type="text"
+				label="COM_USEREXTRANET_CONFIG_FILETYPE_LABEL"
+				description="COM_USEREXTRANET_CONFIG_FILETYPE_DESC"/>
+		</fieldset>
+		
+		<fieldset name="frontend" label="COM_USEREXTRANET_CONFIG_FRONTEND" description="" >
+			<field
+				name="redirect_denied"
+				size="50"
+				type="text"
+				label="COM_USEREXTRANET_CONFIG_RDENIED_LABEL"
+				description="COM_USEREXTRANET_CONFIG_RDENIED_DESC"/>
+				
+			<field
+				name="front_title"
+				default="Extranet"
+				size="20"
+				type="text"
+				label="COM_USEREXTRANET_CONFIG_FRONTTITLE_LABEL"
+				description="COM_USEREXTRANET_CONFIG_FRONTTITLE_DESC"/>
+				
+			<field
+				name="front_welcome"
+				type="textarea"
+				filter="raw"
+				default=""
+				label="COM_USEREXTRANET_CONFIG_FRONTWELCOME_LABEL"
+				rows="7"
+				cols="50"
+				description="COM_USEREXTRANET_CONFIG_FRONTWELCOME_DESC" />
+				
+			<field
+				name="ldocs_status"
+				type="list"
+				default="1"
+				label="COM_USEREXTRANET_CONFIG_LDOCSSTATUS_LABEL"
+				description="COM_USEREXTRANET_CONFIG_LDOCSSTATUS_DESC" >
+				<option value="1">COM_USEREXTRANET_ENABLED</option>
+				<option value="2">COM_USEREXTRANET_DISABLED</option>
+			</field>
+			
+			<field
+				name="ldocs_count"
+				default="5"
+				size="10"
+				type="text"
+				label="COM_USEREXTRANET_CONFIG_LDOCSCOUNT_LABEL"
+				description="COM_USEREXTRANET_CONFIG_LDOCSCOUNT_DESC"/>
+				
+			<field
+				name="ldocs_lifetime"
+				default="30"
+				size="10"
+				type="text"
+				label="COM_USEREXTRANET_CONFIG_LDOCSLIFETIME_LABEL"
+				description="COM_USEREXTRANET_CONFIG_LDOCSLIFETIME_DESC"/>
+				
+			<field
+				name="front_alerts"
+				type="list"
+				default="1"
+				label="COM_USEREXTRANET_CONFIG_FRONTALERTS_LABEL"
+				description="COM_USEREXTRANET_CONFIG_FRONTALERTS_DESC" >
+				<option value="1">COM_USEREXTRANET_ENABLED</option>
+				<option value="2">COM_USEREXTRANET_DISABLED</option>
+			</field>
+			
+			<field
+				name="front_search"
+				type="list"
+				default="1"
+				label="COM_USEREXTRANET_CONFIG_FRONTSEARCH_LABEL"
+				description="COM_USEREXTRANET_CONFIG_FRONTSEARCH_DESC" >
+				<option value="1">COM_USEREXTRANET_ENABLED</option>
+				<option value="2">COM_USEREXTRANET_DISABLED</option>
+			</field>
+			
+			<field
+				name="front_messages"
+				type="list"
+				default="1"
+				label="COM_USEREXTRANET_CONFIG_FRONTMSG_LABEL"
+				description="COM_USEREXTRANET_CONFIG_FRONTMSG_DESC" >
+				<option value="1">COM_USEREXTRANET_ENABLED</option>
+				<option value="2">COM_USEREXTRANET_DISABLED</option>
+			</field>
+		</fieldset>
+		
+		<fieldset
+			name="filters"
+			addfieldpath="/administrator/components/com_userextranet/models/fields"
+			label="COM_USEREXTRANET_CONFIG_TEXT_FILTERS_LABEL"
+			description="COM_USEREXTRANET_CONFIG_TEXT_FILTERS_DESC"
+			>
+
+			<field
+				name="filters"
+				type="filters"
+				label="COM_USEREXTRANET_CONFIG_TEXT_FILTERS_LABEL"
+				class="inputbox"
+				filter="" />
+		</fieldset>
+		
+		<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+			<field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" class="inputbox" validate="rules" filter="rules" component="com_userextranet" section="component" />
+		</fieldset>
+	</config>
+

@@ -1,0 +1,162 @@
+/*
+ * @package Joomla 3
+ * @copyright Copyright (C) 2005 Open Source Matters. All rights reserved.
+ * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL, see LICENSE.php
+ *
+ * @component UserExtranet 1.3
+ * @copyright Copyright (C) 2014 Popa S. Alexandru www.beesto.com
+ * @license : GNU General Public License version 2 or later; see LICENSE.txt
+*/
+
+/* UserExtranet Front-End CSS */
+/* alert */
+
+/* view alert */
+#userextranet div.ue-alert-view {
+	background: #FFFFFF;
+	font-size: 13px;
+}
+#userextranet div.ue-alert-view span {
+	font-weight: bold;
+}
+#userextranet div.ue-alert-view textarea {
+	width: 600px;
+	height: 400px;
+	padding: 5px;
+	margin: 10px 0;
+	font-size: 13px;
+}
+
+/* main alerts div */
+#userextranet div.ue-alerts {
+	padding: 2px;
+	background: #FFFFFF;
+	border: 1px solid silver;
+	line-height: 20px;
+}
+#userextranet div.ue-alerts table tbody tr td.atitle {
+	font-weight: bold;
+}
+#userextranet div.ue-alerts table tbody tr td.aread {
+	text-align: center;
+}
+#userextranet div.ue-alerts a:link,
+#userextranet div.ue-alerts a:visited,
+#userextranet div.ue-alerts a:active {
+	color: #135CAE;
+	font-size: 14px;
+	font-family: helvetica,arial,sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+	background: none;
+}
+#userextranet div.ue-alerts a:hover {
+	/* color: #3088E9; */
+	text-decoration: underline;
+	background: none;
+}
+
+/* table */
+#userextranet table.ue-alert-list {
+	width: 100%;
+	border-spacing: 1px;
+	background-color: #E7E7E7;
+	color: #666;
+	border-collapse: collapse;
+}
+#userextranet table.ue-alert-list td,
+#userextranet table.ue-alert-list th {
+	padding: 4px;
+}
+#userextranet table.ue-alert-list thead th {
+	background: #F0F0F0;
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #FFF;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	color: #CC0000;
+}
+#userextranet table.ue-alert-list tbody tr {
+	background-color: #FFF;
+	text-align: left;
+}
+#userextranet table.ue-alert-list tbody tr.row0:hover td,
+#userextranet table.ue-alert-list tbody tr.row1:hover td {
+	background-color: #E8F6FE;
+}
+#userextranet table.ue-alert-list tbody tr td {
+	/* height: 25px; */
+	background: #fff;
+	border: 1px solid #fff;
+	font-size: 14px;
+}
+
+/* pagination */
+#userextranet table.ue-alert-pagination {
+	width:100%;
+	margin:0;
+	padding:0;
+}
+#userextranet table.ue-alert-pagination tfoot td {
+	border:none;
+	margin:0;
+	padding:0;
+}
+#userextranet table.ue-alert-pagination tfoot td span,
+#userextranet table.ue-alert-pagination tfoot td div,
+#userextranet table.ue-alert-pagination tfoot td p,
+#userextranet table.ue-alert-pagination tfoot td a,
+#userextranet table.ue-alert-pagination tfoot td ul,
+#userextranet table.ue-alert-pagination tfoot td li {
+	margin:0 1px;
+	padding:0 1px;
+	border:none;
+	text-align:center;
+}
+#userextranet table.ue-alert-pagination tfoot td ul {
+	list-style-type: none;
+	margin: 0 100px;
+}
+
+#userextranet table.ue-alert-pagination tfoot td ul li {
+    float: left;
+    list-style: none;
+}
+
+/* toolbar */
+/* link */
+#userextranet div.ue-toolbar a:link,
+#userextranet div.ue-toolbar a:visited,
+#userextranet div.ue-toolbar a:active {
+	color: #135CAE;
+	font-size: 12px;
+	font-family: helvetica,arial,sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+	background: none;
+}
+#userextranet div.ue-toolbar a:hover {
+	/* color: #3088E9; */
+	text-decoration: underline;
+	background: none;
+}
+/* img */
+#userextranet div.ue-toolbar table tr td img {
+	float: left;
+	margin: 3px 1px 0 5px;
+}
+
+/* fieldset */
+#userextranet fieldset.ue-alert-fieldset {
+	border: 1px solid silver;
+	background: #E5E5E5;
+	padding: 5px;
+}
+#userextranet fieldset.ue-alert-fieldset input,
+#userextranet fieldset.ue-alert-fieldset select,
+#userextranet fieldset.ue-alert-fieldset button {
+	border: 1px solid silver;
+	padding: 1px;
+	font-size: 12px;
+}

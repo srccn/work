@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension method="upgrade" type="component" version="1.6.0">
+	<name>UserExtranet</name>
+	<version>1.3</version>
+	<creationDate>June 2014</creationDate>
+	<author>beesto.com development team</author>
+	<authorEmail>contact@beesto.com</authorEmail>
+	<authorUrl>www.beesto.com</authorUrl>
+	<copyright>Copyright (c) 2014 Popa S. Alexandru. All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description><![CDATA[ UserExtranet is a component for Joomla, an ideal tool for your extranet management. ]]></description>
+	
+	<!-- sql -->
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	<!-- Front Files -->
+	<files folder="front">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>LICENSE.txt</filename>
+		<filename>router.php</filename>
+		<filename>userextranet.php</filename>
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>tables</folder>
+		<folder>views</folder>
+	</files>
+	
+	<!-- Front Language -->
+	<languages folder="language/front">
+		<language tag="en-GB">en-GB/en-GB.com_userextranet.ini</language>
+	</languages>
+		
+	<administration>
+	
+		<!-- Back Menu -->
+		<menu img="components/com_userextranet/assets/images/menu/icon-16-ue-menu.png" link="option=com_userextranet">COM_USEREXTRANET</menu>
+		
+		<!-- Back Files -->
+		<files folder="back">
+			<filename>userextranet.php</filename>
+            <filename>config.xml</filename>
+			<filename>access.xml</filename>
+			<filename>CHANGELOG.txt</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>install.sql</filename>
+			<filename>LICENSE.txt</filename>
+            <filename>uninstall.sql</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>root</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+		
+		<!-- Back Language -->
+		<languages folder="language/back">
+			<language tag="en-GB">en-GB/en-GB.com_userextranet.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_userextranet.sys.ini</language>
+		</languages>
+	</administration>
+</extension>
